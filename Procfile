@@ -1,1 +1,1 @@
-web: gunicorn portfolio.wsgi --log-file -
+web: gunicorn ambcadsolutions:portfolio.wsgi --log-file -
