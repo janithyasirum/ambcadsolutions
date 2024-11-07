@@ -1,0 +1,23 @@
+# Python-related
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.pdb
+
+# Django-related
+db.sqlite3
+*.sqlite3
+media/
+staticfiles/
+
+# Virtual Environment
+venv/
+.env
+
+# PyCharm-specific
+.idea/
+*.iml
+
+# Heroku
+*.log

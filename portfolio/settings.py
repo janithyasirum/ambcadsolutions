@@ -58,6 +58,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'portfolio.urls'
@@ -138,7 +139,7 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 
 # Add the following line to allow Heroku to automatically collect your static files:
 # django_heroku.settings(locals())
-
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", ""]
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 

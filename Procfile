@@ -1,0 +1,1 @@
+web: gunicorn ambcadsolutions.wsgi --log-file -
