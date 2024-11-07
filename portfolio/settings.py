@@ -36,7 +36,7 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'amb3dcad.solutions@gmail.com'
 EMAIL_HOST_PASSWORD = 'egwjqlvjwsxmwwuh'
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -145,7 +145,7 @@ ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
 ]
-ALLOWED_HOSTS = os.getenv('ambcadsolutions-103a74841d30.herokuapp.com', '').split(',')
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
