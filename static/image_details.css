@@ -1,0 +1,19 @@
+.img-details-page {
+    background-color: #141412;
+}
+.image-details-1 {
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    margin-top: -20px;
+}
+.img-details-title {
+    color:  #e5e5e5;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.img-desc {
+    color:  #e5e5e5;
+    padding: 50px;
+    margin-top: 50px;
+}

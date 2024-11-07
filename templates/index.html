@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+{%load static%}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+    <!--
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans:400,700">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+</head>
+
+<body class="malcom">
+
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top p-md-3 nav_test">
+    <div class="container con-nav">
+        <a class="navbar-brand" href="admin"><span class="txt-jy">AMB</span>SOLUTIONS</a>
+        <button class="navbar-toggler menu-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-section">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#services-section">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#footer-section">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- carosuel -->
+
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+    <!-- <div class="carousel-indicators line-btn">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div> -->
+
+    <div class="carousel-inner">
+        <div class="carousel-item active img-color" data-bs-interval="0">
+            <video id="video-container" class="d-block w-100" autoplay loop muted>
+                <source src="/static/assests/img/render_1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div id="color-matching-div"></div>
+            <div class="carousel-caption d-md-block txt_bottom">
+                <h2 class="txt_space">AMB 3D MECHANICAL SOLUTIONS</h2>
+                <p>We'll Do <span class="auto-type"></span></p>
+                <!-- <p><button type="button" class="btn btn-warning btn-lg btn-con">Contact</button></p> -->
+
+            </div>
+        </div>
+        <div class="carousel-item img-color" data-bs-interval="0">
+            <video id="video-container" class="d-block w-100" autoplay loop muted>
+                <source src="/static/assests/img/render_2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div id="color-matching-div"></div>
+            <div class="carousel-caption d-md-block txt_bottom">
+                <h2 class="txt_space">AMB 3D MECHANICAL SOLUTIONS</h2>
+                <p>I'll Do <span class="auto-type"></span></p>
+            </div>
+        </div>
+        <div class="carousel-item img-color" data-bs-interval="0">
+            <video id="video-container" class="d-block w-100" autoplay loop muted>
+                <source src="/static/assests/img/render_3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div id="color-matching-div"></div>
+            <div class="carousel-caption d-md-block txt_bottomn">
+                <h2 class="txt_space">AMB 3D MECHANICAL SOLUTIONS</h2>
+                <p>I'll Do <span class="auto-type"></span></p>
+            </div>
+        </div>
+        <div class="carousel-item img-color" data-bs-interval="0">
+            <video id="video-container" class="d-block w-100" autoplay loop muted>
+                <source src="/static/assests/img/render_4.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div id="color-matching-div"></div>
+            <div class="carousel-caption d-md-block txt_bottomn">
+                <h2 class="txt_space">AMB 3D MECHANICAL SOLUTIONS</h2>
+                <p>I'll Do <span class="auto-type"></span></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- carsoul -->
+
+<!-- <div class="container services-title">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="sec-title">
+        <h2 class="sec-title-txt"><span class="hor-line">Our Services</span></h2>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+<!-- services -->
+
+
+<section class="section-services" id="services-section">
+    <div class="container">
+
+        <div class="row justify-content-center text-center">
+            <div class="col-md-10 col-lg-8">
+                <div class="header-section">
+                    <h2 class="title">Our Services</h2>
+                    <p class="description">Explore Our Comprehensive Services and bring your ideas to life with
+                        precision!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ADVERTISERS SERVICE CARD -->
+        <section id="advertisers" class="advertisers-service-sec pt-5 pb-5">
+            <div class="container">
+
+                <div class="row mt-5 mt-md-4 row-cols-1 row-cols-sm-1 row-cols-md-3 justify-content-center">
+                    <div class="col">
+                        <div class="grid">
+                            <figure class="effect-hover">
+                                <img src="/static/assests/img/serviceimg/3d 2d drawing.jpg">
+                                <figcaption>
+                                    <div class="icon-wrapper">
+                                        <i class="fas fa-cube"></i>
+                                    </div>
+                                    <h3>2D & 3D DRAWINGS</h3>
+                                    <p class="ser-des">
+                                        Three-dimensional (3D) design involves creating digital or physical...
+                                    </p>
+                                    <div>
+                                    </div>
+                                    <div class="icon-wrapper-1">
+                                        <a href="{% url 'designs3D' %}">More <i
+                                                class="fas fa-arrow-circle-right"></i></a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col">
+
+
+                        <div class="grid">
+                            <figure class="effect-hover">
+                                <img src="/static/assests/img/serviceimg/printing.jpg">
+                                <figcaption>
+                                    <div class="icon-wrapper">
+                                        <i class="fas fa-cube"></i>
+                                    </div>
+                                    <h3>3D PRINTING</h3>
+                                    <p class="ser-des">
+                                        3D printing is a process where a machine creates objects layer by ...
+                                    </p>
+                                    <div>
+                                    </div>
+                                    <div class="icon-wrapper-1">
+                                        <a href="{% url 'printing3D' %}">More <i class="fas fa-arrow-circle-right"></i></a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="grid">
+                            <figure class="effect-hover">
+                                <img src="/static/assests/img/serviceimg/render.jpg">
+                                <figcaption>
+                                    <div class="icon-wrapper">
+                                        <i class="fas fa-cube"></i>
+                                    </div>
+                                    <h3>PRODUCT RENDERING</h3>
+                                    <p class="ser-des">
+                                        Product rendering is the process of creating realistic images of a ...
+                                    </p>
+                                    <div>
+                                    </div>
+                                    <div class="icon-wrapper-1">
+                                        <a href="{% url 'Productrendering' %}">More <i
+                                                class="fas fa-arrow-circle-right"></i></a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="grid">
+                            <figure class="effect-hover">
+                                <img src="/static/assests/img/serviceimg/laserp.jpg">
+                                <figcaption>
+                                    <div class="icon-wrapper">
+                                        <i class="fas fa-cube"></i>
+                                    </div>
+                                    <h3>LASER & PLASMA CUTTING</h3>
+                                    <p class="ser-des">
+                                        Three-dimensional (3D) design involves creating digital or physical...
+                                    </p>
+                                    <div>
+                                    </div>
+                                    <div class="icon-wrapper-1">
+                                        <a href="{% url 'laser' %}">More <i class="fas fa-arrow-circle-right"></i></a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col">
+
+                        <div class="grid">
+                            <figure class="effect-hover">
+                                <img src="/static/assests/img/serviceimg/cnc.jpg">
+                                <figcaption>
+                                    <div class="icon-wrapper">
+                                        <i class="fas fa-cube"></i>
+                                    </div>
+                                    <h3>CNC CUTTING</h3>
+                                    <p class="ser-des">
+                                        Three-dimensional (3D) design involves creating digital or physical...
+                                    </p>
+                                    <div>
+                                    </div>
+                                    <div class="icon-wrapper-1">
+                                        <a href="{% url 'cnc' %}">More <i class="fas fa-arrow-circle-right"></i></a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col">
+
+
+                        <div class="grid">
+                            <figure class="effect-hover">
+                                <img src="/static/assests/img/serviceimg/metal.jpg">
+                                <figcaption>
+                                    <div class="icon-wrapper">
+                                        <i class="fas fa-cube"></i>
+                                    </div>
+                                    <h3>SHEET METAL FABRICATION DRAWING</h3>
+                                    <p class="ser-des">
+                                        Three-dimensional (3D) design involves creating digital or physical...
+                                    </p>
+                                    <div>
+                                    </div>
+                                    <div class="icon-wrapper-1">
+                                        <a href="#">More <i class="fas fa-arrow-circle-right"></i></a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col">
+
+
+                        <div class="grid">
+                            <figure class="effect-hover">
+                                <img src="/static/assests/img/serviceimg/framework.jpg">
+                                <figcaption>
+                                    <div class="icon-wrapper">
+                                        <i class="fas fa-cube"></i>
+                                    </div>
+                                    <h3>METAL STUCTURE DESIGNS</h3>
+                                    <p class="ser-des">
+                                        Three-dimensional (3D) design involves creating digital or physical...
+                                    </p>
+                                    <div>
+                                    </div>
+                                    <div class="icon-wrapper-1">
+                                        <a href="#">More <i class="fas fa-arrow-circle-right"></i></a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col">
+
+
+                        <div class="grid">
+                            <figure class="effect-hover">
+                                <img src="/static/assests/img/serviceimg/furniture.jpg">
+                                <figcaption>
+                                    <div class="icon-wrapper">
+                                        <i class="fas fa-cube"></i>
+                                    </div>
+                                    <h3>FURNITURE AND TOYS</h3>
+                                    <p class="ser-des">
+                                        Three-dimensional (3D) design involves creating digital or physical...
+                                    </p>
+                                    <div>
+                                    </div>
+                                    <div class="icon-wrapper-1">
+                                        <a href="#">More <i class="fas fa-arrow-circle-right"></i></a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ADVERTISERS SERVICE CARD ENDED -->
+
+
+    </div>
+</section>
+<!-- Service -->
+
+<!-- laset works -->
+
+<div class="page-content page-container" id="page-content">
+    <div class="padding">
+        <div class="row container">
+            <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card-body">
+
+                    <div class="row justify-content-center text-center">
+                        <div class="col-md-10 col-lg-8">
+                            <div class="header-section">
+                                <h2 class="title">Our Latest Works</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="owl-carousel">
+                        {% for pic in all_pics %}
+                        <div class="item">
+                            <a href="{% if pic.image %}{% url 'image_detail' pk=pic.pk %}{% else %}# {% endif %}">
+                                <img src="{{ pic.image.url }}" alt="image"/>
+                            </a>
+                            <a href="{% if pic.pk %}{% url 'image_detail' pk=pic.pk %}{% else %}# {% endif %}">
+                                <h2 class="item-title-txt">{{ pic.caption }}</h2>
+                            </a>
+                        </div>
+                        {% endfor %}
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- latest works -->
+
+
+<!-- about -->
+
+<div class="container about-sec" id="about-section">
+    <div class="row">
+
+        <div class="col-md-6 ab-sec2">
+            <div class="about-des">
+                <h1 class="about-title">About Us</h1>
+                <p class="about-pg">
+                    Anushka Madushanka Bandara Diploma in Mechanical Engineering from BOLTON University, England.
+                    Bachelors in
+                    Mechanical Engineering (BEng) from De Montfort University 2 years of hands-on experience
+                    contributing to
+                    mechanical production excellence. 4 years as a freelance professional on Fiverr Proficient in 3D
+                    modeling,
+                    Expertise in CAD designing, ensuring precision and efficiency. Passionate about mechanical
+                    innovation, I'm
+                    dedicated to translating ideas into reality and delivering high-quality solutions. Let's turn your
+                    engineering challenges into triumphs together!
+                </p>
+                <h2 class="Ceo-name">CEO. Anushka Bandara</h2>
+            </div>
+        </div>
+        <div class="col-md-6 ab-sec1">
+            <img src="/static/assests/img/anuhska.png" alt="anushka" class="anushka-pic">
+        </div>
+    </div>
+</div>
+
+<!-- contact -->
+<div class="container works-title c-say-title">
+    <div class="row">
+        <div class="col-sm-12">
+            <h2 class="sec-title-txt">What Our clients says</h2>
+        </div>
+    </div>
+</div>
+
+<!-- Testimonial Section -->
+<div id="myCarousel" class="carousel slide caro-1" data-ride="carousel" data-pause="false">
+    <ol class="carousel-indicators cus-indi">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active cus-item">
+            <div class="img-box cus-box"><img src="/static/assests/img/testimonial/plasma.jpg" alt=""></div>
+            <p class="testimonial">Anushka's work is absolutely top-notch. His deep understanding and prompt delivery
+                made
+                collaboration effortless and highly cooperative. Thank you for another great project, I love working
+                with you!
+                🙌
+            </p>
+            <p class="overview"><b>Plasma9420</b><a class="company" href="#"></a></p>
+            <a href="https://www.fiverr.com/s/ljbPwX2" class="click_review">click here to visit</a>
+
+            <div class="star-rating">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="carousel-item cus-item">
+            <div class="img-box cus-box"><img src="/static/assests/img/testimonial/vccapital54.jpg" alt=""></div>
+            <p class="testimonial">Excellent! Thank you so much I will continue to work with this seller! He is always
+                available and works with me to complete project in a timely manner! Very impressed with finding product.
+                Highly recommend</p>
+            <p class="overview"><b>vccapital54</b><a class="company" href="#"></a></p>
+            <a href="https://www.fiverr.com/s/ljbPwX2" class="click_review">click here to visit</a>
+
+            <div class="star-rating">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="carousel-item cus-item">
+            <div class="img-box cus-box"><img src="/static/assests/img/testimonial/myb_direct.jpg" alt=""></div>
+            <p class="testimonial">Anushka delivered PERFECT 3D models and final renders with impressive visual appeal
+                and
+                creativity. The work was smooth and efficient; I HIGHLY recommend him to all! 👏
+            </p>
+            <p class="overview"><b>myb_direct</b> <a class="company" href="#"></a></p>
+            <a href="https://www.fiverr.com/s/ljbPwX2" class="click_review">click here to visit</a>
+            <div class="star-rating">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                    <!-- <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="carousel-item cus-item">
+            <div class="img-box cus-box"><img src="/static/assests/img/testimonial/guypdavis.jpg" alt=""></div>
+            <p class="testimonial">Fantastic work, once again! I have gone to Anushka several times now for product
+                designs
+                and changes and he always delivers quickly and accurately. Thank you so much!
+            </p>
+            <p class="overview"><b>guypdavis</b> <a class="company" href="#"></a></p>
+            <a href="https://www.fiverr.com/s/ljbPwX2" class="click_review">click here to visit</a>
+            <div class="star-rating">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                    <!-- <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="carousel-item cus-item">
+            <div class="img-box cus-box"><img src="/static/assests/img/testimonial/larue61.jpg" alt=""></div>
+            <p class="testimonial">Working with Anushka was more than a pleasure. He understood exactly what I needed.
+                He
+                made some suggestions to my product design that will probably make it more unique and even more
+                attractive to
+                the consumer.
+            </p>
+            <p class="overview"><b>larue61</b> <a class="company" href="#"></a></p>
+            <a href="https://www.fiverr.com/s/ljbPwX2" class="click_review">click here to visit</a>
+            <div class="star-rating">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                    <!-- <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="carousel-item cus-item">
+            <div class="img-box cus-box"><img src="/static/assests/img/testimonial/tylerfisher720.jpg" alt=""></div>
+            <p class="testimonial">I wanted to take a moment to express my sincere gratitude for the excellent work
+                you've
+                done. Your professionalism, dedication, and attention to detail have truly impressed me. You've not only
+                met
+                but exceeded my expectations, and I couldn't be happier with the results. Thank you for your hard work
+                and for
+                being such a valuable asset to our team. We look forward to working together in the future!
+            </p>
+            <p class="overview"><b>tylerfisher720</b> <a class="company" href="#"></a></p>
+            <a href="https://www.fiverr.com/s/ljbPwX2" class="click_review">click here to visit</a>
+            <div class="star-rating">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="carousel-item cus-item">
+            <div class="img-box cus-box"><img src="/static/assests/img/testimonial/helenhanna829.jpg" alt=""></div>
+            <p class="testimonial">I am very happy with everything. When i first texted him i really did not even know
+                what
+                i wanted. But he helped me from start to finish with everything. He is communicative, he is very good at
+                understanding me, even sometimes i did not understand myself. I Will always use Anushka in the future.
+                10/10!!!!!!
+            </p>
+            <p class="overview"><b>helenhanna829</b> <a class="company" href="#"></a></p>
+            <a href="https://www.fiverr.com/s/ljbPwX2" class="click_review">click here to visit</a>
+            <div class="star-rating">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                    <!-- <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="carousel-item cus-item">
+            <div class="img-box cus-box"><img src="/static/assests/img/testimonial/isaacjacobson.jpg" alt=""></div>
+            <p class="testimonial">Above and beyond. The delivered files were perfect. Much better than I expected, and
+                much
+                faster. Anushkabandara does incredible work. If you are looking for a 3d designer, look no further.
+                10/10.
+                Well done. Thank you very much!
+            </p>
+            <p class="overview"><b>isaacjacobson</b> <a class="company" href="#"></a></p>
+            <a href="https://www.fiverr.com/s/ljbPwX2" class="click_review">click here to visit</a>
+            <div class="star-rating">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                    <!-- <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev btn-prev" href="#myCarousel" data-slide="prev">
+        <i class="fa fa-angle-left"></i>
+    </a>
+    <a class="carousel-control-next btn-next" href="#myCarousel" data-slide="next">
+        <i class="fa fa-angle-right"></i>
+    </a>
+</div>
+<!--End Testimonial Section -->
+
+<!-- Footer -->
+<footer class="text-center" id="footer-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 contact-section vertical-line">
+                <h2 class="footer-logo-1">CONTACT</h2>
+                <div class="contact-sec">
+                    <p><i class="fa-solid fa-location-dot"></i><a href="#">Kurunegala, Sri Lanka | </a> <i
+                            class="fa-solid fa-phone"></i><a href="#"> +94765371831</a></p>
+
+                    <div class="footer-social-icons">
+
+                        <a href="https://wa.me/+94765371831"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@AMB3DSolutions"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://web.facebook.com/amb3dsolutions"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 vertical-line">
+
+                <svg class="svg-illu" viewBox="0 0 901.806 1201.411">
+                    <g>
+                        <circle cx="446.39" cy="943.119" r="111.367"/>
+                        <circle fill="#141412" cx="446.39" cy="943.12" r="78.062"/>
+                        <circle fill="none" stroke="#e0e0e0" stroke-width="25" stroke-miterlimit="10" cx="446.003"
+                                cy="943.364"
+                                r="30.407"/>
+                        <polygon points="395.559,862.793 450.224,848.169 422.359,801.246 396.271,808.225 	"/>
+                        <polygon points="351.454,939.176 366.078,993.841 311.509,993.128 304.53,967.04 	"/>
+                        <polygon points="497.173,1023.266 442.508,1037.89 470.372,1084.812 496.46,1077.834 	"/>
+                        <polygon points="541.227,947.09 526.603,892.426 581.171,893.138 588.15,919.226 	"/>
+                        <polygon points="353.681,922.188 381.993,873.194 329.11,859.718 315.599,883.099 	"/>
+                        <polygon points="376.504,1007.387 425.498,1035.699 386.409,1073.781 363.027,1060.27 	"/>
+                        <polygon points="539.003,963.808 510.69,1012.803 563.573,1026.279 577.085,1002.897 	"/>
+                        <polygon points="516.29,878.792 467.296,850.479 506.386,812.397 529.767,825.909 	"/>
+                        <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 446 943"
+                                          to="360 446 943" dur="5s" repeatCount="indefinite"/>
+                    </g>
+
+                    <g>
+                        <circle cx="637.25" cy="611.257" r="221.065"/>
+                        <circle fill="#141412" cx="637.25" cy="611.258" r="170.05"/>
+                        <circle fill="none" stroke="#e0e0e0" stroke-width="40" stroke-miterlimit="10" cx="640.003"
+                                cy="611.364"
+                                r="51.823"/>
+                        <polygon points="520.69,453.546 583.968,422.525 535.886,366.294 505.688,381.098 	"/>
+                        <polygon points="448.518,664.54 479.539,727.817 407.091,742.819 392.287,712.622 	"/>
+                        <polygon points="753.81,768.969 690.533,799.99 738.614,856.221 768.812,841.417 	"/>
+                        <polygon points="825.982,557.975 794.962,494.698 867.409,479.696 882.214,509.893 	"/>
+                        <polygon points="442.931,582.028 465.739,515.35 392.878,509.895 381.994,541.716 	"/>
+                        <polygon points="541.343,782.769 608.021,805.577 567.709,866.515 535.888,855.63 	"/>
+                        <polygon points="831.569,640.486 808.761,707.165 881.622,712.62 892.507,680.8 	"/>
+                        <polygon points="733.158,439.747 666.479,416.938 706.792,356.001 738.612,366.886 	"/>
+                        <polygon points="468.256,510.983 514.501,457.808 449.062,425.308 426.992,450.685 	"/>
+                        <polygon points="483.8,734.007 536.976,780.252 476.678,821.516 451.301,799.446 	"/>
+                        <polygon points="806.245,711.532 759.999,764.708 825.438,797.207 847.509,771.83 	"/>
+                        <polygon points="790.7,488.508 737.525,442.263 797.823,401 823.2,423.069 	"/>
+                        <polygon points="446.848,659.851 441.948,589.549 372.695,612.841 375.033,646.391 	"/>
+                        <polygon points="615.542,806.56 685.843,801.66 672.383,873.475 638.834,875.813 	"/>
+                        <polygon points="827.652,562.665 832.553,632.966 901.806,609.675 899.468,576.125 	"/>
+                        <polygon points="658.959,415.956 588.658,420.855 602.117,349.041 635.667,346.702 	"/>
+                        <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="360 640 611"
+                                          to="0 640 611" dur="10s" repeatCount="indefinite"/>
+                    </g>
+                    <g>
+                        <circle cx="230.003" cy="381.364" r="192.407"/>
+                        <circle fill="#141412" cx="230.003" cy="381.364" r="148.005"/>
+                        <polygon points="154.936,228.312 213.965,211.651 181.466,155.533 153.296,163.484 		"/>
+                        <polygon points="60.29,397.402 76.952,456.431 12.123,458.071 4.172,429.901 		"/>
+                        <polygon points="305.002,534.175 245.973,550.837 278.472,606.954 306.642,599.003 		"/>
+                        <polygon points="399.476,365.394 382.814,306.365 447.643,304.725 455.594,332.895 		"/>
+                        <polygon points="68.201,325.942 98.159,272.42 36.63,256.353 22.333,281.895 		"/>
+                        <polygon points="121.06,513.208 174.581,543.166 130.534,589.034 104.992,574.737 		"/>
+                        <polygon points="391.805,436.786 361.847,490.308 423.376,506.375 437.673,480.833 		"/>
+                        <polygon points="338.946,249.521 285.425,219.562 329.472,173.694 355.014,187.991 		"/>
+                        <polygon points="100.997,269.075 148.91,230.781 97.965,192.719 75.1,210.994 		"/>
+                        <polygon points="79.42,462.457 117.714,510.37 59.633,536.267 41.358,513.402 		"/>
+                        <polygon points="359.009,493.653 311.096,531.947 362.041,570.009 384.906,551.734 		"/>
+                        <polygon points="380.586,300.271 342.292,252.358 400.373,226.461 418.648,249.326 		"/>
+                        <polygon points="59.382,393.185 66.183,332.228 3.246,341.337 0,370.427 		"/>
+                        <polygon points="180.866,545.184 241.824,551.985 219.066,611.367 189.976,608.121 		"/>
+                        <polygon points="400.625,369.543 393.823,430.5 456.761,421.391 460.006,392.301 		"/>
+                        <polygon points="279.14,217.544 218.182,210.743 240.939,151.361 270.03,154.607 		"/>
+                        <circle fill="#141412" stroke="#e0e0e0" stroke-width="35" stroke-miterlimit="10" cx="230.003"
+                                cy="381.364"
+                                r="44.931"/>
+                        <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 230 381"
+                                          to="360 230 381" dur="10s" repeatCount="indefinite"/>
+                    </g>
+
+                </svg>
+
+
+                <div class="quick">
+                    <h2 class="footer-logo"><span class="txt-jy">AMB</span>SOLUTIONS</h2>
+
+
+                </div>
+            </div>
+
+            <div class="col-lg-4 footer-sec-3">
+
+                <h2 class="footer-logo-1">QUICK CONTACT</h2>
+                <div class="success-message"></div>
+                <form action="{% url 'send_email' %}" method="post">
+                    {% csrf_token %}
+                    <input type="text" id="subject" name="subject" placeholder="name" class="form-item"><br>
+                    <input type="email" id="from_email" name="from_email" placeholder="email" class="form-item"><br>
+                    <div class="message-container">
+              <textarea id="message" name="message" rows="4" cols="50" placeholder="message"
+                        class="form-item"></textarea>
+                        <button id="sendButton" class="btn btn-primary send-btn" type="submit">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Success message container -->
+                <div id="successMessage">
+                    Email sent successfully!
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid map-container">
+        <div class="col-lg-12">
+            <div class="footer-map">
+                <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d886.2372484999942!2d80.35125597343348!3d7.510882976145919!2m3!1f351.45342999999997!2f0!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x3ae339c3f2f6e0c9%3A0xdf565ede112bf97a!2sAMB%203D%20%26%20Mechanical%20Solutions!5e1!3m2!1sen!2slk!4v1704355414076!5m2!1sen!2slk"
+                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d886.2372484999942!2d80.35125597343348!3d7.510882976145919!2m3!1f351.45342999999997!2f0!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x3ae339c3f2f6e0c9%3A0xdf565ede112bf97a!2sAMB%203D%20%26%20Mechanical%20Solutions!5e1!3m2!1sen!2slk!4v1704355414076!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+            </div>
+        </div>
+    </div>
+    <div class="container copyright">
+        <div class="col-lg-12 contact-section">
+            <h2 class="copyright-txt">Copyright ©2024 All rights reserved | Designed by <a
+                    href="https://www.fiverr.com/janithyasiru" class="design-txt">Janith</a></h2>
+        </div>
+    </div>
+</footer>
+<!-- footer end -->
+
+
+<script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/f5aee07125.js" crossorigin="anonymous"></script>
+
+<script src="static/js/main.js"></script>
+
+
+<!-- carosuel video play -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var carouselItems = document.querySelectorAll(".carousel-item");
+      carouselItems.forEach(function (item) {
+        var video = item.querySelector("video");
+        var duration = video.duration * 1000;
+        item.setAttribute("data-bs-interval", duration);
+      });
+    });
+
+</script>
+
+
+<!-- auto type -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var autoTypeElements = document.querySelectorAll('.auto-type');
+
+      autoTypeElements.forEach(function (element) {
+        var typed = new Typed(element, {
+          strings: ["Rendering", "3D Modelling", "Auto Cad designs", "Blending"],
+          typeSpeed: 150,
+          backSpeed: 150,
+          loop: true
+        });
+      });
+    });
+
+</script>
+
+<script>
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel({
+        autoplay: true,
+        autoplayTimeout: 3000,
+        center: false,
+        nav: true,
+        navText: ["<span class='arrow_carrot-left'>‹</span>", "<span class='arrow_carrot-right'>›</span>"],
+        pagination: false,
+        loop: true,
+        responsive: {
+          0: {
+            items: 1  // Set 1 item when screen width is less than 768px
+          },
+          768: {
+            items: 2  // Set 4 items when screen width is between 768px and 992px
+          },
+          940: {
+            items: 3  // Set 4 items when screen width is larger than 992px
+          },
+          1200: {
+            items: 4  // Set 4 items when screen width is larger than 992px
+          },
+          1700: {
+            items: 5  // Set 4 items when screen width is larger than 992px
+          }
+        }
+      });
+    });
+
+</script>
+
+
+<script>
+    $(document).ready(function () {
+      $("form").submit(function (event) {
+        event.preventDefault();
+
+        var formData = $(this).serialize();
+
+        $.ajax({
+          type: "POST",
+          url: $(this).attr("action"),
+          data: formData,
+          success: function (response) {
+            $('#subject').val('');
+            $('#from_email').val('');
+            $('#message').val('');
+
+            $('#successMessage').text("Email sent successfully!").show();
+
+            setTimeout(function () {
+              $('#successMessage').hide();
+            }, 5000);
+          },
+          error: function (xhr, status, error) {
+            alert("Error: " + error);
+          }
+        });
+      });
+    });
+
+</script>
+
+
+<!-- caption animation -->
+
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/3d_designs.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+    <title>Document</title>
+</head>
+
+<body class="designs-body">
+
+    <nav class="navbar navbar-expand-lg bg-transparent"> 
+        <div class="container">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav nav-items-text">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'home' %}"> <span class="txt-home">Home </span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">>3d printing</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      
+    
+    <div class="wrapper">
+        <div class="container">
+
+            <div class="inner-wrapper">
+                <div class="content">
+                    <h2 class="page-title">3D PRINTING <i class="fa-brands fa-unity"></i></h2>
+                    
+                    <p class="works-titile-2">I uses materials like plastic, metal, or resin to "print" real, 3D items. The design is made on a computer and then sent to a 3D printer, which builds the object by adding thin layers one at a time. This technology allows quick, custom production, making it useful for prototypes, tools, toys, and even medical devices. </p>
+                </div>
+                <div class="image">
+                    <img src="/static/assests/img/3d.jpg" width="1600" height="900" alt="image" class="img-3d">
+                    <div class="image-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="container works-3d">
+        <div class="title-3d">
+            <h3 class="title-3d-txt" id="flipText">Here are the projects we have done related to 3D</h3>
+        </div>
+        <div class="row row-1">
+            {% for pic in pics_1 %}
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="img-card" >
+                        <img src="{{ pic.image.url }}" alt="" class="images-3d">
+                    </div>
+                    <div class="card-content">
+                        <h4 class="card-title">
+                            <h3 class="caption-txt">
+                                {{ pic.caption }}
+                            </h3>
+                        </h4>
+                        <div class="truncated-paragraph-wrapper">
+                            <p class="truncated-paragraph" data-max-length="80">
+                                {{ pic.description }}
+                            </p>
+                        </div>
+                        <a href="{% url 'image_detail' pk=pic.pk %}" class="btn btn-link btn-block read-txt">
+                            Read More
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="card-read-more">
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- new -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://kit.fontawesome.com/f5aee07125.js" crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var paragraphs = document.querySelectorAll(".truncated-paragraph");
+
+            paragraphs.forEach(function (paragraph) {
+                var maxLength = parseInt(paragraph.getAttribute("data-max-length"), 10);
+                var text = paragraph.textContent;
+
+                if (text.length > maxLength) {
+                    var truncatedText = text.substring(0, maxLength);
+                    paragraph.textContent = truncatedText + "...";
+                }
+            });
+        });
+
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var textElement = document.getElementById("flipText");
+            var originalText = textElement.innerText;
+
+            // Function to create a span for each letter with the flip animation
+            function createFlippingText(text) {
+                return text.split('').map(function (char, index) {
+                    var span = document.createElement('span');
+                    span.innerText = char;
+                    span.style.animationDelay = index * 0.3 + 's';
+                    return span;
+                });
+            }
+
+            // Replace the original text with flipping spans
+            textElement.innerHTML = '';
+            createFlippingText(originalText).forEach(function (span) {
+                textElement.appendChild(span);
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
