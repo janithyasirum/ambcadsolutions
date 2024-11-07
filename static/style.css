@@ -249,6 +249,9 @@ li>a:hover:after {
     height: 40vh;
     object-fit: cover;
 }
+.carousel-caption {
+    bottom: 36px !important;
+}
 }
 
 
