@@ -147,20 +147,6 @@ ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
 ]
-# Redirect HTTP requests to HTTPS
-SECURE_SSL_REDIRECT = True
-
-# Configure Django to recognize Heroku's SSL proxy headers
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-
-# Enable HTTP Strict Transport Security (HSTS) to enforce HTTPS
-SECURE_HSTS_SECONDS = 31536000  # Set to 1 year (in seconds)
-SECURE_HSTS_INCLUDE_SUBDOMAINS = True  # Apply HSTS to all subdomains
-SECURE_HSTS_PRELOAD = True  # Preload HSTS in supported browsers
-
-# Enable other security settings
-SECURE_BROWSER_XSS_FILTER = True  # Prevent cross-site scripting attacks
-SECURE_CONTENT_TYPE_NOSNIFF = True  # Prevent browsers from guessing the MIME type
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
