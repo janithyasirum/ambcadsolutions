@@ -141,7 +141,9 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorag'
 # Add the following line to allow Heroku to automatically collect your static files:
 # django_heroku.settings(locals())
 ALLOWED_HOSTS = [
-    'ambcadsolutions-103a74841d30.herokuapp.com',  # Add your Heroku app domain here
+    'ambcadsolutions-103a74841d30.herokuapp.com',
+    'ambcadsolutions.com',
+    'www.ambcadsolutions.com',# Add your Heroku app domain here
     'localhost',
     '127.0.0.1',
 ]
