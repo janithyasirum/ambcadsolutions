@@ -276,6 +276,7 @@
   text-decoration: none !important;
   color: #ffdc12 !important;
   font-size: 13px !important;
+  width: 100%;
 
 }
 .read-txt:hover {

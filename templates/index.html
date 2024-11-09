@@ -27,7 +27,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top p-md-3 nav_test">
     <div class="container con-nav">
-        <a class="navbar-brand" href="admin"><span class="txt-jy">AMB</span>SOLUTIONS</a>
+        <a class="navbar-brand" href=""><img src="/static/assests/img/navbar/amb-logo.png" class="navbar-logo">SOLUTIONS</a>
         <button class="navbar-toggler menu-button" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,16 +36,17 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">HOME</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about-section">ABOUT</a>
+                    <a class="nav-link active" href="#home-section">HOME</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " href="#services-section">SERVICES</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#footer-section">CONTACT</a>
+                    <a class="nav-link" href="#about-section">ABOUT</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link " href="#contact-section">CONTACT</a>
                 </li>
             </ul>
         </div>
@@ -53,62 +54,63 @@
 </nav>
 
 <!-- carosuel -->
+<div id="home-section">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+        <!-- <div class="carousel-indicators line-btn">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div> -->
 
-<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
-    <!-- <div class="carousel-indicators line-btn">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
-    </div> -->
+        <div class="carousel-inner">
+            <div class="carousel-item active img-color" data-bs-interval="0">
+                <video id="video-container" class="d-block w-100" autoplay loop muted>
+                    <source src="/static/assests/img/render_1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div id="color-matching-div"></div>
+                <div class="carousel-caption d-md-block txt_bottom">
+                    <h2 class="txt_space">AMB 3D MECHANICAL SOLUTIONS</h2>
+                    <p>We'll Do <span class="auto-type"></span></p>
+                    <!-- <p><button type="button" class="btn btn-warning btn-lg btn-con">Contact</button></p> -->
 
-    <div class="carousel-inner">
-        <div class="carousel-item active img-color" data-bs-interval="0">
-            <video id="video-container" class="d-block w-100" autoplay loop muted>
-                <source src="/static/assests/img/render_1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div id="color-matching-div"></div>
-            <div class="carousel-caption d-md-block txt_bottom">
-                <h2 class="txt_space">AMB 3D MECHANICAL SOLUTIONS</h2>
-                <p>We'll Do <span class="auto-type"></span></p>
-                <!-- <p><button type="button" class="btn btn-warning btn-lg btn-con">Contact</button></p> -->
-
+                </div>
             </div>
-        </div>
-        <div class="carousel-item img-color" data-bs-interval="0">
-            <video id="video-container" class="d-block w-100" autoplay loop muted>
-                <source src="/static/assests/img/render_2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div id="color-matching-div"></div>
-            <div class="carousel-caption d-md-block txt_bottom">
-                <h2 class="txt_space">AMB 3D MECHANICAL SOLUTIONS</h2>
-                <p>I'll Do <span class="auto-type"></span></p>
+            <div class="carousel-item img-color" data-bs-interval="0">
+                <video id="video-container" class="d-block w-100" autoplay loop muted>
+                    <source src="/static/assests/img/render_2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div id="color-matching-div"></div>
+                <div class="carousel-caption d-md-block txt_bottom">
+                    <h2 class="txt_space">AMB 3D MECHANICAL SOLUTIONS</h2>
+                    <p>I'll Do <span class="auto-type"></span></p>
+                </div>
             </div>
-        </div>
-        <div class="carousel-item img-color" data-bs-interval="0">
-            <video id="video-container" class="d-block w-100" autoplay loop muted>
-                <source src="/static/assests/img/render_3.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div id="color-matching-div"></div>
-            <div class="carousel-caption d-md-block txt_bottomn">
-                <h2 class="txt_space">AMB 3D MECHANICAL SOLUTIONS</h2>
-                <p>I'll Do <span class="auto-type"></span></p>
+            <div class="carousel-item img-color" data-bs-interval="0">
+                <video id="video-container" class="d-block w-100" autoplay loop muted>
+                    <source src="/static/assests/img/render_3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div id="color-matching-div"></div>
+                <div class="carousel-caption d-md-block txt_bottomn">
+                    <h2 class="txt_space">AMB 3D MECHANICAL SOLUTIONS</h2>
+                    <p>I'll Do <span class="auto-type"></span></p>
+                </div>
             </div>
-        </div>
-        <div class="carousel-item img-color" data-bs-interval="0">
-            <video id="video-container" class="d-block w-100" autoplay loop muted>
-                <source src="/static/assests/img/render_4.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div id="color-matching-div"></div>
-            <div class="carousel-caption d-md-block txt_bottomn">
-                <h2 class="txt_space">AMB 3D MECHANICAL SOLUTIONS</h2>
-                <p>I'll Do <span class="auto-type"></span></p>
+            <div class="carousel-item img-color" data-bs-interval="0">
+                <video id="video-container" class="d-block w-100" autoplay loop muted>
+                    <source src="/static/assests/img/render_4.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div id="color-matching-div"></div>
+                <div class="carousel-caption d-md-block txt_bottomn">
+                    <h2 class="txt_space">AMB 3D MECHANICAL SOLUTIONS</h2>
+                    <p>I'll Do <span class="auto-type"></span></p>
+                </div>
             </div>
         </div>
     </div>
@@ -152,6 +154,7 @@
                             <figure class="effect-hover">
                                 <img src="/static/assests/img/serviceimg/3d 2d drawing.jpg">
                                 <figcaption>
+                                    <a href="{% url 'designs3D' %}" class="full-link"></a>
                                     <div class="icon-wrapper">
                                         <i class="fas fa-cube"></i>
                                     </div>
@@ -176,12 +179,13 @@
                             <figure class="effect-hover">
                                 <img src="/static/assests/img/serviceimg/printing.jpg">
                                 <figcaption>
+                                    <a href="{% url 'printing3D' %}" class="full-link"></a>
                                     <div class="icon-wrapper">
                                         <i class="fas fa-cube"></i>
                                     </div>
                                     <h3>3D PRINTING</h3>
                                     <p class="ser-des">
-                                        3D printing is a process where a machine creates objects layer by ...
+                                        I uses materials like plastic, metal, or resin to "print" real, 3D ...
                                     </p>
                                     <div>
                                     </div>
@@ -197,12 +201,13 @@
                             <figure class="effect-hover">
                                 <img src="/static/assests/img/serviceimg/render.jpg">
                                 <figcaption>
+                                    <a href="{% url 'Productrendering' %}" class="full-link"></a>
                                     <div class="icon-wrapper">
                                         <i class="fas fa-cube"></i>
                                     </div>
                                     <h3>PRODUCT RENDERING</h3>
                                     <p class="ser-des">
-                                        Product rendering is the process of creating realistic images of a ...
+                                        I helps visualize how a product will look before it's made. This te...
                                     </p>
                                     <div>
                                     </div>
@@ -219,41 +224,46 @@
                             <figure class="effect-hover">
                                 <img src="/static/assests/img/serviceimg/laserp.jpg">
                                 <figcaption>
+                                    <a href="{% url 'laserplasmacutting' %}" class="full-link"></a>
                                     <div class="icon-wrapper">
                                         <i class="fas fa-cube"></i>
                                     </div>
                                     <h3>LASER & PLASMA CUTTING</h3>
                                     <p class="ser-des">
-                                        Three-dimensional (3D) design involves creating digital or physical...
+                                        I offer Laser & Plasma Cutting services that provide precise and ef...
                                     </p>
                                     <div>
                                     </div>
                                     <div class="icon-wrapper-1">
-                                        <a href="{% url 'laser' %}">More <i class="fas fa-arrow-circle-right"></i></a>
+                                        <a href="{% url 'laserplasmacutting' %}">More <i
+                                                class="fas fa-arrow-circle-right"></i></a>
                                     </div>
                                 </figcaption>
                             </figure>
                         </div>
                     </div>
                     <div class="col">
-
                         <div class="grid">
                             <figure class="effect-hover">
-                                <img src="/static/assests/img/serviceimg/cnc.jpg">
+                                <img src="/static/assests/img/serviceimg/cnc.jpg"><a
+                                    href="{% url 'cnccutting' %}"></a>
                                 <figcaption>
+                                    <a href="{% url 'cnccutting' %}" class="full-link"></a>
                                     <div class="icon-wrapper">
                                         <i class="fas fa-cube"></i>
                                     </div>
                                     <h3>CNC CUTTING</h3>
                                     <p class="ser-des">
-                                        Three-dimensional (3D) design involves creating digital or physical...
+                                        CNC Cutting is a precise, computer-guided method for cutting materi...
                                     </p>
                                     <div>
                                     </div>
                                     <div class="icon-wrapper-1">
-                                        <a href="{% url 'cnc' %}">More <i class="fas fa-arrow-circle-right"></i></a>
+                                        <a href="{% url 'cnccutting' %}">More <i
+                                                class="fas fa-arrow-circle-right"></i></a>
                                     </div>
                                 </figcaption>
+
                             </figure>
                         </div>
                     </div>
@@ -264,17 +274,19 @@
                             <figure class="effect-hover">
                                 <img src="/static/assests/img/serviceimg/metal.jpg">
                                 <figcaption>
+                                    <a href="{% url 'sheetmetal' %}" class="full-link"></a>
                                     <div class="icon-wrapper">
                                         <i class="fas fa-cube"></i>
                                     </div>
                                     <h3>SHEET METAL FABRICATION DRAWING</h3>
                                     <p class="ser-des">
-                                        Three-dimensional (3D) design involves creating digital or physical...
+                                        Offering precise sheet metal fabrication drawings, I specialize in ...
                                     </p>
                                     <div>
                                     </div>
                                     <div class="icon-wrapper-1">
-                                        <a href="#">More <i class="fas fa-arrow-circle-right"></i></a>
+                                        <a href="{% url 'sheetmetal' %}">More <i
+                                                class="fas fa-arrow-circle-right"></i></a>
                                     </div>
                                 </figcaption>
                             </figure>
@@ -287,17 +299,19 @@
                             <figure class="effect-hover">
                                 <img src="/static/assests/img/serviceimg/framework.jpg">
                                 <figcaption>
+                                    <a href="{% url 'metalstructuredesigns' %}" class="full-link"></a>
                                     <div class="icon-wrapper">
                                         <i class="fas fa-cube"></i>
                                     </div>
-                                    <h3>METAL STUCTURE DESIGNS</h3>
+                                    <h3>METAL STRUCTURE DESIGNS</h3>
                                     <p class="ser-des">
-                                        Three-dimensional (3D) design involves creating digital or physical...
+                                        At AMB3d Mechanical Solutions, we specialize in high-quality metal ...
                                     </p>
                                     <div>
                                     </div>
                                     <div class="icon-wrapper-1">
-                                        <a href="#">More <i class="fas fa-arrow-circle-right"></i></a>
+                                        <a href="{% url 'metalstructuredesigns' %}">More <i
+                                                class="fas fa-arrow-circle-right"></i></a>
                                     </div>
                                 </figcaption>
                             </figure>
@@ -310,17 +324,19 @@
                             <figure class="effect-hover">
                                 <img src="/static/assests/img/serviceimg/furniture.jpg">
                                 <figcaption>
+                                    <a href="{% url 'furnitureandtoys' %}" class="full-link"></a>
                                     <div class="icon-wrapper">
                                         <i class="fas fa-cube"></i>
                                     </div>
                                     <h3>FURNITURE AND TOYS</h3>
                                     <p class="ser-des">
-                                        Three-dimensional (3D) design involves creating digital or physical...
+                                        Discover custom furniture and toy design services at AMB3d Mechanic...
                                     </p>
                                     <div>
                                     </div>
                                     <div class="icon-wrapper-1">
-                                        <a href="#">More <i class="fas fa-arrow-circle-right"></i></a>
+                                        <a href="{% url 'furnitureandtoys' %}">More <i
+                                                class="fas fa-arrow-circle-right"></i></a>
                                     </div>
                                 </figcaption>
                             </figure>
@@ -352,13 +368,13 @@
                         </div>
                     </div>
 
-                    <div class="owl-carousel">
+                    <div class="owl-carousel owl-theme">
                         {% for pic in all_pics %}
                         <div class="item">
-                            <a href="{% if pic.image %}{% url 'image_detail' pk=pic.pk %}{% else %}# {% endif %}">
-                                <img src="{{ pic.image.url }}" alt="image"/>
+                            <a href="{% url 'image_detail' model_name=pic.model_name pk=pic.pk %}">
+                                <img src="{{ pic.image.url }}" alt="{{ pic.caption }}"/>
                             </a>
-                            <a href="{% if pic.pk %}{% url 'image_detail' pk=pic.pk %}{% else %}# {% endif %}">
+                            <a href="{% url 'image_detail' model_name=pic.model_name pk=pic.pk %}">
                                 <h2 class="item-title-txt">{{ pic.caption }}</h2>
                             </a>
                         </div>
@@ -382,7 +398,7 @@
 
         <div class="col-md-6 ab-sec2">
             <div class="about-des">
-                <h1 class="about-title">About Us</h1>
+                <h1 class="about-title">About Me</h1>
                 <p class="about-pg">
                     Anushka Madushanka Bandara Diploma in Mechanical Engineering from BOLTON University, England.
                     Bachelors in
@@ -594,7 +610,7 @@
 <!--End Testimonial Section -->
 
 <!-- Footer -->
-<footer class="text-center" id="footer-section">
+<footer class="text-center" id="contact-section">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-4 contact-section vertical-line">
@@ -689,7 +705,8 @@
 
 
                 <div class="quick">
-                    <h2 class="footer-logo"><span class="txt-jy">AMB</span>SOLUTIONS</h2>
+                    <a class="navbar-brand" href="admin"><img src="/static/assests/img/navbar/amb-logo.png"
+                                                              class="navbar-logo-1">SOLUTIONS</a>
 
 
                 </div>
@@ -767,6 +784,11 @@
       });
     });
 
+
+
+
+
+
 </script>
 
 
@@ -785,6 +807,11 @@
         });
       });
     });
+
+
+
+
+
 
 </script>
 
@@ -818,6 +845,11 @@
       });
     });
 
+
+
+
+
+
 </script>
 
 
@@ -850,10 +882,97 @@
       });
     });
 
+
+
+
+
+
 </script>
 
 
 <!-- caption animation -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+        // Function to update active link based on the URL or hash
+        function updateActiveLinkOnLoad() {
+            const currentPath = window.location.hash || window.location.pathname;
+
+            // If the URL is empty (on the homepage), highlight the "Home" link
+            if (currentPath === '/' || currentPath === '') {
+                navLinks.forEach((link) => {
+                    if (link.getAttribute('href') === '#home-section') {
+                        link.classList.add('active');
+                    } else {
+                        link.classList.remove('active');
+                    }
+                });
+            } else {
+                // If the URL matches a section, highlight the corresponding link
+                navLinks.forEach((link) => {
+                    if (currentPath.includes(link.getAttribute('href').substring(1))) {
+                        link.classList.add('active');
+                    } else {
+                        link.classList.remove('active');
+                    }
+                });
+            }
+        }
+
+        // Ensure the active link is updated on page load
+        updateActiveLinkOnLoad();
+
+        // Handle scroll events to update active link based on scroll position
+        window.addEventListener('scroll', function () {
+            let current = "";
+
+            const sectionsAndDivs = document.querySelectorAll('#home-section, #services-section, #about-section, #contact-section');
+
+            // Check which section is in view and set the active class accordingly
+            sectionsAndDivs.forEach((item) => {
+                const itemTop = item.offsetTop;
+                const itemHeight = item.clientHeight;
+
+                // If the section is in the viewport, set the current variable
+                if (pageYOffset >= itemTop - itemHeight / 3 && pageYOffset < itemTop + itemHeight) {
+                    current = item.getAttribute('id');
+                }
+            });
+
+            // If no valid section is found, remove the active class from all links
+            if (!current) {
+                navLinks.forEach((link) => {
+                    link.classList.remove('active');
+                });
+            } else {
+                // If a valid section is found, highlight the corresponding navbar link
+                navLinks.forEach((link) => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').includes(current)) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        });
+
+        // Handle click event to update active class when a link is clicked (in case of page load or hash change)
+        navLinks.forEach((link) => {
+            link.addEventListener('click', function () {
+                navLinks.forEach((lnk) => {
+                    lnk.classList.remove('active');
+                });
+                link.classList.add('active');
+            });
+        });
+    });
+
+
+
+
+</script>
+
 
 </body>
 

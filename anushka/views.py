@@ -1,65 +1,85 @@
+from django.forms import models
 from django.shortcuts import render
 from itertools import chain
-from .models import drawing2d3d, printing3d,ProductRendering,Lasercutting, CNCcutting
+from .models import drawing2d3d, printing3d, ProductRendering, Lasercutting, CNCcutting, Sheetmetal, Metalstrture, \
+    Furnitureandtoys
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.contenttypes.models import ContentType
-from django.shortcuts import render
 from django.core.mail import send_mail
 from django.http import HttpResponse
 
-
 def home(request):
-    image_pics = drawing2d3d.objects.all()
-    profile_pics = printing3d.objects.all()
-    all_pics = list(chain(image_pics, profile_pics))
+    all_pics = list(chain(
+        drawing2d3d.objects.all(),
+        printing3d.objects.all(),
+        ProductRendering.objects.all(),
+        Lasercutting.objects.all(),
+        CNCcutting.objects.all(),
+        Sheetmetal.objects.all(),
+        Metalstrture.objects.all(),
+        Furnitureandtoys.objects.all()
+    ))
+
+    for pic in all_pics:
+        pic.model_name = pic.__class__.__name__
+
     return render(request, "index.html", {"all_pics": all_pics})
-
-
 def designs3D(request):
     pics = drawing2d3d.objects.all()
-    return render(request, "3D_designs.html", {"pics": pics})
+    model_name = "drawing2d3d"
+    return render(request, "3D_designs.html", {"pics": pics, "model_name": model_name})
 
 
 def printing3D(request):
     pics = printing3d.objects.all()
-    return render(request, "printing.html", {"pics_1": pics})
+    model_name = "printing3d"
+    return render(request, "printing.html", {"pics": pics, "model_name": model_name})
 
 
 def Productrendering(request):
     pics = ProductRendering.objects.all()
-    return render(request, "prorendering.html", {"pics": pics})
+    model_name = "ProductRendering"
+    return render(request, "prorendering.html", {"pics": pics, "model_name": model_name})
 
 
-def laser(request):
+def laserplasmacutting(request):
     pics = Lasercutting.objects.all()
-    return render(request, "laser.html", {"pics": pics})
+    model_name = "Lasercutting"
+    return render(request, "laser.html", {"pics": pics, "model_name": model_name})
 
-def cnc(request):
+
+def cnccutting(request):
     pics = CNCcutting.objects.all()
-    return render(request, "cnccutting.html", {"pics": pics})
+    model_name = "CNCcutting"
+    return render(request, "cnccutting.html", {"pics": pics, "model_name": model_name})
 
-# def LaserPlasma(request):
-#     pics_1 = Laserandplasma.objects.all()
-#     return render(request, "prorendering.html", {"pics_1": pics_1})
+def sheetmetal(request):
+    pics = Sheetmetal.objects.all()
+    model_name = "Sheetmetal"
+    return render(request, "sheet_metal.html", {"pics": pics, "model_name": model_name})
 
+def metalstructuredesigns(request):
+    pics = Metalstrture.objects.all()
+    model_name = "Metalstrture"
+    return render(request, "metal_structure.html", {"pics": pics, "model_name": model_name})
+
+def furnitureandtoys(request):
+    pics = Furnitureandtoys.objects.all()
+    model_name = "Furnitureandtoys"
+    return render(request, "furniture.html", {"pics": pics, "model_name": model_name})
+
+from django.apps import apps
 
 def image_detail(request, model_name, pk):
-    # Get the model class based on the model name from the URL
-    content_type = get_object_or_404(ContentType, model=model_name)
-    model_class = content_type.model_class()
-
-    # Retrieve the image object
-    image = get_object_or_404(model_class, pk=pk)
-
-    # Render the template with the retrieved image object
-    return render(request, "image_detail.html", {"image": image})
-
+    app_config = apps.get_app_config('anushka')
+    try:
+        model_class = app_config.get_model(model_name)
+        image = get_object_or_404(model_class, pk=pk)
+        return render(request, "image_detail.html", {"image": image})
+    except LookupError:
+        return render(request, "404.html", status=404)
 
 # email
-from django.core.mail import send_mail
-from django.http import HttpResponse
-from django.shortcuts import render
-
 
 def send_email(request):
     if request.method == 'POST':
@@ -81,5 +101,3 @@ def send_email(request):
         return HttpResponse('Email sent successfully')
     else:
         return render(request, 'index.html')
-
-

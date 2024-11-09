@@ -27,26 +27,25 @@
                             class="">Home</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><span class="txt-home">>2D and 3D Drawings</span></a>
+                    <a class="nav-link" href="#"><span class="txt-home">>Furniture and Toys</span></a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
 
-
 <div class="wrapper">
     <div class="container">
 
         <div class="inner-wrapper">
             <div class="content">
-                <h2 class="page-title">2D & 3D Drawings <i class="fa-brands fa-unity"></i></h2>
+                <h2 class="page-title">Furniture and Toys <i class="fa-brands fa-unity"></i></h2>
 
-                <p class="works-titile-2">Three-dimensional (3D) design involves creating digital or physical
-                    representations with depth, adding realism to objects or environments. Used in architecture,
-                    industrial design, gaming, animation, and more, 3D design employs specialized software for
-                    modeling, texturing, and rendering. Its applications range from pre-construction architectural
-                    models to detailed character animations in entertainment. .</p>
+                <p class="works-titile-2">Discover custom furniture and toy design services at AMB3d Mechanical
+                    Solutions. Crafted with precision and creativity, each piece reflects functionality and style. From
+                    contemporary furniture to imaginative toys, every project is tailored to fit clients' needs and
+                    spaces. Designs combine durability with aesthetic appeal, making both play and living spaces
+                    exceptional.</p>
             </div>
             <div class="image">
                 <img src="/static/assests/img/3d.jpg" width="1600" height="900" alt="image" class="img-3d">
@@ -56,17 +55,16 @@
     </div>
 </div>
 
-
 <div class="container works-3d">
     <div class="title-3d">
-        <h3 class="title-3d-txt" id="flipText">Here are the projects we have done related to 2D and 3D Drawings</h3>
+        <h3 class="title-3d-txt" id="flipText">Here are the projects we have done related to Furniture and Toys</h3>
     </div>
     <div class="row row-1">
         {% for pic in pics %}
         <div class="col-md-3">
             <div class="card">
-                <a href="{% url 'image_detail' model_name=model_name pk=pic.pk %}" class="btn btn-link btn-block read-txt">
-
+                <a href="{% url 'image_detail' model_name=model_name pk=pic.pk %}"
+                   class="btn btn-link btn-block read-txt">
                     <div class="img-card">
                         <img src="{{ pic.image.url }}" alt="" class="images-3d">
                     </div>
@@ -81,8 +79,7 @@
                                 {{ pic.description }}
                             </p>
                         </div>
-                        <a href="{% url 'image_detail' model_name=model_name pk=pic.pk %}"
-                           class="btn btn-link btn-block read-txt">
+                        <a href="{% url 'image_detail' pk=pic.pk %}" class="btn btn-link btn-block read-txt">
                             Read More
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
