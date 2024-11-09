@@ -64,7 +64,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'portfolio.urls'
 
-PREPEND_WWW = True
+# PREPEND_WWW = True
 
 TEMPLATES = [
     {
