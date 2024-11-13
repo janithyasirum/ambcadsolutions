@@ -34,43 +34,6 @@
     </div>
 </nav>
 
-<!-- <div class="container">
-
-    <div class="card">
-        {% for pic in pics %}
-
-        <div class="img-cover"><a href="{% url 'image_detail' pk=pic.pk %}">
-                <img src="{{ pic.image.url }}" alt="{{ pic.caption }}">
-            </a>
-            <div class="icon"><svg width="23" height="18" viewBox="0 0 23 18" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 9H22M12 1.5L20.9333 8.2C21.4667 8.6 21.4667 9.4 20.9333 9.8L12 16.5" stroke="black"
-                        stroke-width="3" />
-                </svg>
-            </div>
-        </div>
-
-        <div class="desc">
-            <h1>The Mountain</h1>
-            <p>mountain is the best place to chill out and rest cause it's has beautiful scenery and fresh air</p>
-            <a href="">Bring me <svg width="19" height="14" viewBox="0 0 23 18" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 9H22M12 1.5L20.9333 8.2C21.4667 8.6 21.4667 9.4 20.9333 9.8L12 16.5" stroke="white"
-                        stroke-width="3" />
-                </svg></a>
-        </div>
-        {% endfor %}
-    </div>
-
-</div> -->
-<!-- <div class="container works-titile-1">
-    <div class="row">
-        <div class="col-md-6">
-            <h2 class="sec-title-txt">3D Designs <i class="fa-brands fa-unity"></i></h2>
-            <p class="works-titile-2">Lorem ipsum printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ips</p>
-        </div>
-    </div>
-</div> -->
 <div class="wrapper">
     <div class="container">
 
@@ -85,59 +48,36 @@
                     specific needs.</p>
             </div>
             <div class="image">
-                <img src="/static/assests/img/3d.jpg" width="1600" height="900" alt="image" class="img-3d">
+                <img src="/static/assests/img/serviceimg/services/laser1.jpg" width="1600" height="900" alt="image" class="img-3d">
                 <div class="image-overlay"></div>
             </div>
         </div>
     </div>
 </div>
 
-<!-- <div class="container-fluid designs-img">
-    <div class="row">
-        <div class="col-md-4">
-            {% for pic in pics %}
-            <div class="box">
-                <div class="imgBox">
-                    <img src="{{ pic.image.url }}" alt="{{ pic.caption }}">
-                </div>
-                <div class="content">
-                    <h2>Karan Singh</br>
-                        <span>Graphic Designer</span>
-                    </h2>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-
-
-    </div>
-</div> -->
-
 <div class="container works-3d">
     <div class="title-3d">
         <h3 class="title-3d-txt" id="flipText">Here are the projects we have done related to Laser & Plasma Cutting</h3>
     </div>
-    <div class="row row-1">
+     <div class="row row-1">
         {% for pic in pics %}
         <div class="col-md-3">
             <div class="card">
-                <a href="{% url 'image_detail' model_name=model_name pk=pic.pk %}" class="btn btn-link btn-block read-txt">
+                <a href="{% url 'image_detail' model_name=model_name pk=pic.pk %}"
                    class="btn btn-link btn-block read-txt">
                     <div class="img-card">
-                        <img src="{{ pic.image.url }}" alt="" class="images-3d">
+                        <img src="{{ pic.image1.url }}" alt="{{ pic.caption }}" class="images-3d">
                     </div>
                     <div class="card-content">
-                        <h4 class="card-title">
-                            <h3 class="caption-txt">
-                                {{ pic.caption }}
-                            </h3>
-                        </h4>
+                        <h3 class="caption-txt">
+                            {{ pic.caption | truncatechars:20 }} </h3>
                         <div class="truncated-paragraph-wrapper">
                             <p class="truncated-paragraph" data-max-length="80">
                                 {{ pic.description }}
                             </p>
                         </div>
-                        <a href="{% url 'image_detail' pk=pic.pk %}" class="btn btn-link btn-block read-txt">
+                        <a href="{% url 'image_detail' model_name=model_name pk=pic.pk %}"
+                           class="btn btn-link btn-block read-txt">
                             Read More
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
@@ -152,21 +92,6 @@
 </div>
 
 
-<!-- <div class="portfolio">
-    {% for pic in pics %}
-    <a href="#" class="card">
-        <div class="content">
-            <span class="title">tttt</span>
-            <span class="category">Mobile / Design / Rebranding</span>
-        </div>
-        <div class="image">
-            <a href="{% url 'image_detail' pk=pic.pk %}">
-                <img src="{{ pic.image.url }}" alt="{{ pic.caption }}">
-            </a>
-        </div>
-    </a>
-    {% endfor %}
-</div> -->
 
 <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
 

@@ -223,7 +223,7 @@
                     <div class="col">
                         <div class="grid">
                             <figure class="effect-hover">
-                                <img src="/static/assests/img/serviceimg/laserp.jpg">
+                                <img src="/static/assests/img/serviceimg/lasercut.jpg">
                                 <figcaption>
                                     <a href="{% url 'laserplasmacutting' %}" class="full-link"></a>
                                     <div class="icon-wrapper">
@@ -373,7 +373,7 @@
                         {% for pic in all_pics %}
                         <div class="item">
                             <a href="{% url 'image_detail' model_name=pic.model_name pk=pic.pk %}">
-                                <img src="{{ pic.image.url }}" alt="{{ pic.caption }}"/>
+                                <img src="{{ pic.image1.url }}" alt="{{ pic.caption }}"/>
                             </a>
                             <a href="{% url 'image_detail' model_name=pic.model_name pk=pic.pk %}">
                                 <h2 class="item-title-txt">{{ pic.caption }}</h2>
@@ -401,16 +401,14 @@
             <div class="about-des">
                 <h1 class="about-title">About Me</h1>
                 <p class="about-pg">
-                    Anushka Madushanka Bandara Diploma in Mechanical Engineering from BOLTON University, England.
-                    Bachelors in
-                    Mechanical Engineering (BEng) from De Montfort University 2 years of hands-on experience
-                    contributing to
-                    mechanical production excellence. 4 years as a freelance professional on Fiverr Proficient in 3D
-                    modeling,
-                    Expertise in CAD designing, ensuring precision and efficiency. Passionate about mechanical
-                    innovation, I'm
-                    dedicated to translating ideas into reality and delivering high-quality solutions. Let's turn your
-                    engineering challenges into triumphs together!
+                    Hey there! I’m Anushka Madushanka Bandara, a mechanical engineer with a passion for bringing ideas
+                    to life. I studied at Bolton University and earned my BEng from De Montfort University in England.
+                    For the past few years, I've been hands-on in the world of mechanical production, with additional
+                    experience as a Fiverr Pro freelancer.
+
+                    Whether it’s precise 3D modeling or detailed CAD design, I’m all about creating solutions that are
+                    both efficient and effective. Engineering isn’t just my profession, it’s my passion. If you’re
+                    looking to turn your ideas into something real, let’s make it happen together!
                 </p>
                 <h2 class="Ceo-name">CEO. Anushka Bandara</h2>
             </div>
@@ -790,6 +788,8 @@
 
 
 
+
+
 </script>
 
 
@@ -814,44 +814,40 @@
 
 
 
+
+
 </script>
 
 <script>
-    $(document).ready(function () {
-      $(".owl-carousel").owlCarousel({
-        autoplay: true,
-        autoplayTimeout: 3000,
-        center: false,
-        nav: true,
-        navText: ["<span class='arrow_carrot-left'>‹</span>", "<span class='arrow_carrot-right'>›</span>"],
-        pagination: false,
-        loop: true,
-        responsive: {
-          0: {
-            items: 1  // Set 1 item when screen width is less than 768px
-          },
-          768: {
-            items: 2  // Set 4 items when screen width is between 768px and 992px
-          },
-          940: {
-            items: 3  // Set 4 items when screen width is larger than 992px
-          },
-          1200: {
-            items: 4  // Set 4 items when screen width is larger than 992px
-          },
-          1700: {
-            items: 5  // Set 4 items when screen width is larger than 992px
-          }
-        }
-      });
-    });
-
-
-
-
-
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel({
+    autoplay: true,
+    autoplayTimeout: 3000,
+    center: false,
+    nav: true,
+    dots: true,  // Enable dots on both mobile and desktop
+    navText: ["<span class='arrow_carrot-left'>‹</span>", "<span class='arrow_carrot-right'>›</span>"],
+    pagination: true,
+    loop: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 2
+      },
+      940: {
+        items: 3
+      },
+      1200: {
+        items: 4
+      }
+    }
+  });
+});
 
 </script>
+
 
 
 <script>
@@ -882,6 +878,8 @@
         });
       });
     });
+
+
 
 
 
@@ -968,6 +966,8 @@
             });
         });
     });
+
+
 
 
 

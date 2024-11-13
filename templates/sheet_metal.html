@@ -48,7 +48,7 @@
                     projects from concept to completion with precision and reliability</p>
             </div>
             <div class="image">
-                <img src="/static/assests/img/3d.jpg" width="1600" height="900" alt="image" class="img-3d">
+                <img src="/static/assests/img/serviceimg/services/smetal.jpg" width="1600" height="900" alt="image" class="img-3d">
                 <div class="image-overlay"></div>
             </div>
         </div>
@@ -63,23 +63,21 @@
         {% for pic in pics %}
         <div class="col-md-3">
             <div class="card">
-                <a href="{% url 'image_detail' model_name=model_name pk=pic.pk %}" class="btn btn-link btn-block read-txt">
+                <a href="{% url 'image_detail' model_name=model_name pk=pic.pk %}"
                    class="btn btn-link btn-block read-txt">
                     <div class="img-card">
-                        <img src="{{ pic.image.url }}" alt="" class="images-3d">
+                        <img src="{{ pic.image1.url }}" alt="{{ pic.caption }}" class="images-3d">
                     </div>
                     <div class="card-content">
-                        <h4 class="card-title">
-                            <h3 class="caption-txt">
-                                {{ pic.caption }}
-                            </h3>
-                        </h4>
+                        <h3 class="caption-txt">
+                            {{ pic.caption | truncatechars:20 }} </h3>
                         <div class="truncated-paragraph-wrapper">
                             <p class="truncated-paragraph" data-max-length="80">
                                 {{ pic.description }}
                             </p>
                         </div>
-                        <a href="{% url 'image_detail' pk=pic.pk %}" class="btn btn-link btn-block read-txt">
+                        <a href="{% url 'image_detail' model_name=model_name pk=pic.pk %}"
+                           class="btn btn-link btn-block read-txt">
                             Read More
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
@@ -87,7 +85,6 @@
                     <div class="card-read-more">
                     </div>
                 </a>
-
             </div>
         </div>
         {% endfor %}
